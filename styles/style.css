@@ -1,0 +1,133 @@
+:root {
+    --blanco1: #fefcff;
+    --colorFondo: #ffa0cd;
+    --colorBotones1: #ffe0ef;
+    --colorBotones2: #fe7cbc;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente al centro */
+    background-color: black;
+}
+
+#background {
+    width: 25%; /* Ancho del 25% del contenedor principal (body) */
+    height: 100%; /* Altura del 100% del contenedor principal (body) */
+    position: relative; /* Establece el contexto de posicionamiento para los hijos */
+    display: flex; /* Opcional: para centrar el contenido interno */
+    justify-content: center;
+}
+
+#videoDeFondo {
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen al tamaño del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el contenedor */
+}
+
+#background::after {
+    content: ''; /* Necesario para el pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg,black, transparent);
+    pointer-events: none; /* Permite clics a través de la capa */
+}
+#botones-move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    position: absolute;
+    bottom: 5%;
+}
+.button-menu1 {
+    width: 60px;
+    height: 50px;
+    background-color: transparent;
+    border: transparent;
+}
+.button-medio {
+    width: 110px;
+    height: 70px;
+    border-radius: 100%;
+    border: 0px solid transparent;
+    background: linear-gradient(rgba(255, 255, 255, 0.877) 10%, rgba(255, 255, 255, 0.112));
+}
+.big-icons1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+}
+.big-icons2 {
+    width: 50px;
+    height: auto;
+}
+.big-icons3 {
+    width: 40px;
+    height: auto;
+
+}
+.big-icons4 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+}
+h1 {
+    position: absolute;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+h2 {
+    position: absolute;
+    font-size: 11px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 15px;
+    position: absolute;
+    left: 70px;
+}
+#nickname {
+    font-size: 12px;
+    position: absolute;
+    left: 70px;
+    top: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+#descripcion {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 130px;
+    z-index: 1000;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+}
+#imagenDeCancion {
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+    border-radius: 20%;
+}
