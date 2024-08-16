@@ -9,10 +9,6 @@ let testamentos = [
     {
         video: "assests/video1.mp4",
         texto: `
-            Deja de decirme esa mierda de que terminamos por querer chingar todo el tiempo.
-            <br>
-            Sabes que no es verdad. 
-            <br>
             Siempre te traté bien; cuando estabas triste, intentaba animarte y hacerte reír. 
             <br>
             Nadie te tuvo tanta paciencia como yo.  <br>Si terminamos, fue porque tú no querías estar conmigo. 
